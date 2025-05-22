@@ -34,6 +34,9 @@ pip install python-dotenv requests
 AI_API_KEY=你的API密钥
 ```
 
+## 获取API密钥
+请访问 [BaiyiAI开放平台](https://api.baiyiai.online) 注册并获取您的API密钥。
+
 ## 配置说明
 1. **API密钥配置**
    - 在`.env`文件中设置`AI_API_KEY`
