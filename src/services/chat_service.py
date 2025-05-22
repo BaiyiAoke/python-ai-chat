@@ -8,7 +8,7 @@ load_dotenv()
 class ChatService:
     def __init__(self, api_key):
         self.api_key = api_key
-        self.base_url = "https://api.baiyiai.online/v1/chat/completions"  # 修改完整的API端点
+        self.base_url = "https://api.baiyiai.online/v1/chat/completions"  # 默认使用https://api.baiyiai.online URL
         self.headers = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json"
@@ -17,7 +17,7 @@ class ChatService:
     def send_message(self, message):
         try:
             payload = {
-                "model": "gpt-4o-mini",
+                "model": "gpt-4o-mini", #修改想用的模型名称
                 "messages": [{"role": "user", "content": message}]
             }
             
